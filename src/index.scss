@@ -1,0 +1,112 @@
+@import "../node_modules/chartist/dist/scss/chartist.scss";
+@import "../node_modules/react-day-picker/lib/style.css";
+
+//
+// Graph Component
+//
+.ct-series-a .ct-bar {
+  stroke: rgb(249, 129, 0);
+}
+
+//
+// Calendar Component
+//
+.selection .DayPicker-Day--selected {
+  background-color: #79bd1a !important;
+  color: #fff;
+}
+.selection .DayPicker-Day {
+  border-radius: 0 !important;
+}
+.selection .DayPicker-Day--start {
+  font-weight: bold;
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+.selection .DayPicker-Day--end {
+  font-weight: bold;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.selection .DayPicker-Caption {
+  text-align: center;
+}
+
+.selection .DayPicker-NavButton--prev {
+  left: 1.5rem;
+  margin-right: 0;
+}
+
+.selection .DayPicker-Month {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.selection .DayPicker-Weekdays {
+  position: relative;
+  &::after,
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    background: #e3e3e3;
+  }
+  &::before {
+    top: 0;
+  }
+}
+
+//
+// Slider Component
+//
+.input-range {
+  height: 2rem;
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.input-range__label {
+  display: none;
+}
+
+.input-range__track--background {
+  left: 0;
+  margin-top: -0.15rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.input-range__track {
+  background: #eee;
+  cursor: pointer;
+  display: block;
+  height: 0.3rem;
+  position: relative;
+  transition: left 300ms ease-out, width 300ms ease-out;
+}
+
+.input-range__track--active {
+  background: #f88000;
+}
+
+.input-range__slider-container {
+  transition: left 300ms ease-out;
+}
+
+.input-range__slider {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin-left: -0.75rem;
+  margin-top: -0.9rem;
+  background: #fff;
+  border: 4px solid #f88000;
+  border-radius: 100%;
+  display: block;
+  transition: transform 300ms ease-out;
+}
