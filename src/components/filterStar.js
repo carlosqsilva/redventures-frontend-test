@@ -54,7 +54,7 @@ const Input = styled.input.attrs({
     content: "✔";
     position: absolute;
     font-size: 22px;
-    top: -6px;
+    top: -3px;
     left: 0px;
     color: #f88000;
   }

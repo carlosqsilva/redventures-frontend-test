@@ -6,9 +6,7 @@ import {
   runInAction,
   computed
 } from "mobx"
-/*
-https://rif2ibxnjk.execute-api.sa-east-1.amazonaws.com/prod/hotels
-*/
+
 const url = "https://rif2ibxnjk.execute-api.sa-east-1.amazonaws.com/prod/hotels"
 const months = [
   "January",
